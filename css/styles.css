@@ -198,11 +198,19 @@ figure {
 
 @media screen and (min-width: 768px) {
   .site-logo {
+    position: fixed;
+    left: 0.9rem;
+    z-index: 1500;
+    width: 50px;
+    height: 50px;
+  }
 
+  .site-nav-list {
+    margin-top: 80px;
   }
 
   .site-nav {
-    width: 50px;
+    width: 75px;
     height: 100%;
   }
 
@@ -210,5 +218,9 @@ figure {
     float: none;
     display: block;
     width: auto;
+  }
+
+  .movie-overview {
+    display: block;
   }
 }
