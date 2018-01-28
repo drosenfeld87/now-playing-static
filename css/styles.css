@@ -209,7 +209,9 @@ figure {
   .movie:not(:first-child) > .movie-image > .movie-poster {
     display: initial;
   }
+
 }
+
 
 @media screen and (min-width: 768px) {
 
@@ -244,4 +246,20 @@ figure {
     display: inline-block;
     width: auto;
   }
+
+@media screen and (min-width: 1440px) {
+  .movie:first-child > .movie-image > .movie-backdrop {
+    display: block;
+    width: 100%;
+  }
+
+  .movie:last-child > .movie-image > .movie-poster {
+    display: none;
+  }
+
+  .movie:last-child > .movie-image > .movie-backdrop {
+    display: block;
+    width: 100%;
+  }
+
 }
