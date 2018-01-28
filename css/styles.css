@@ -137,10 +137,7 @@ figure {
   background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.7) 100%);
 }
 
-/*
-  Hide the overview on mobile devices
-  TIP: Use media queries to reveal it on larger devices
-*/
+
 .movie-overview {
   display: none;
 }
@@ -195,7 +192,31 @@ figure {
   margin: 0;
 }
 
+
+
+@media screen and (min-width: 992px) {
+
+  .movie:not(:first-child) {
+    display: inline-block;
+    width: 33%;
+  }
+
+  .movie:not(:first-child) > .movie-details > p,
+   .movie:not(:first-child) > .movie-image > .movie-backdrop {
+    display: none;
+  }
+
+  .movie:not(:first-child) > .movie-image > .movie-poster {
+    display: initial;
+  }
+}
+
 @media screen and (min-width: 768px) {
+
+  main {
+    margin-left: 75px;
+  }
+
   .site-logo {
     position: fixed;
     left: 0.9rem;
@@ -222,8 +243,5 @@ figure {
   .movie-overview, .movie-details {
     display: inline-block;
     width: auto;
-    left: 4rem;
   }
-
-
 }
